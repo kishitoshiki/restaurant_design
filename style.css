@@ -1,0 +1,923 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+    font-size: 62.5%; /* 16px * 62.5% = 10px */
+    width: 100%;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 2.4rem;
+    text-align: left;
+    ;
+}
+section h2 {
+    font-size: 2.4rem;
+}
+a:hover {
+    opacity: 0.5;
+}
+.none {
+    display: none;
+}
+/*ここから記述*/
+.header-section {
+    position: fixed;
+    z-index: 3;
+    height: 50px;;
+    width: 95%;
+    padding: 5% 5%10px 0%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between
+}
+.header-section_h1 {
+    margin-right: auto;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-section_image-logo {
+    margin: 0px 10px;
+    width: 40px;
+    height: 40px;
+}
+.header-section_menu-button {
+    width: 40px;
+    height: 30px;
+}
+.header-section_navigation {
+    display: none;
+}
+.header-section_books {
+    display: none;
+}
+/*メニューバーのボタン*/
+.drawer-toggle {
+width: 100%;
+}
+.drawer-hamburger-icon{
+    margin-left: 80%;
+    background-color: #fff;
+    width: 0%;
+
+}
+.drawer-hamburger-icon::after{
+    background-color: #fff;
+    width: 40%;
+
+}
+.drawer-hamburger-icon::before{
+    background-color: #fff;
+    width: 40%;
+
+}
+
+
+
+.drawer-brand{
+    color: #fff;
+    line-height: 9rem;
+    font-size: 2.0rem;
+}
+.drawer-menu-item{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.drawer-nav{
+    background-color:#333;
+}
+/*ここからパソコンのレスポンシブ（ヘッダー）*/
+@media (min-width: 960px) {
+    .header-section {
+        position: inherit;
+        padding: inherit;
+        height: 140px;
+        width: 100%;
+    }
+    .header-section_h1 {
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .header-section_image-logo {
+        margin: 30px 0px 0px 30px;
+        width: 90px;
+        height: 90px;
+    }
+    .header-section_menu-button {
+        display: none;
+    }
+    .drawer-toggle{
+        display: none;
+    }
+/*    .header-section_navigation */
+   .drawer-nav{
+       position: inherit;
+        display: block;
+        text-align: right;
+        width: 80%;
+        margin: 105px 0px 0px 0px;
+       background-color: rgba(0,0,0,0);
+       color: #fff;
+       z-index: 0;
+    }
+ .drawer-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .drawer-nav ul li {
+        display: flex;
+    }
+    .drawer-brand{
+  display: none;
+    }
+    .drawer-menu-item{
+         font-size: 2rem;
+        color: #fff;
+        border-bottom: solid 1px #ffffff;
+        line-height: 1;
+    }
+    .header-section_books {
+        display: block;
+        text-align: right;
+    }
+    .header-section_books-tel {
+        font-size: 1.4rem;
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        width: 220px;
+        position: relative;
+        margin: 25px 25px 25px 25px;
+    }
+    .header-section_books-tel::before {
+        content: '';
+        background: no-repeat url("assets/handset.png");
+        display: block;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -40px;
+        top: -10px;
+    }
+    .header-section_books button {
+        display: block;
+        background: none;
+        width: 227px;
+        height: 55px;
+        border: solid 1px;
+        outline: none;
+        appearance: none;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+/*ここまでがパソコンレスポンシブ*/
+.main {
+    background-color: #F4F1ED;
+}
+.section-top__img { /*section要素の外*/
+    background: no-repeat url("assets/header-image.png");
+    background-position: center;
+    background-size: 914px 614px;
+    height: 610px;
+    margin-bottom: 40px;
+    position: relative
+}
+.section-top_img-h2{
+    display: block;
+    text-align: center;
+    color: #EBEBEB;
+    width: 100%;
+    padding: 10px 0px;
+    background: no-repeat #686868;
+    background-size: 100% 50px;
+    position: absolute;
+    bottom: 0;
+}
+/*セクショントップ*/
+.section-top {
+    position: relative;
+    display: block;
+}
+.section-top_sentence {
+}
+.section-top_sentence-decoration1 {
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    transform: rotate(270deg);
+}
+.section-top_sentence-decoration2 {
+    position: absolute;
+    top: 0px;
+    right: 24px;
+}
+.section-top_sentence-decoration3 {
+    position: absolute;
+    top: 550px;
+    left: 24px;
+    transform: rotate(180deg)
+}
+.section-top_sentence-decoration4 {
+    position: absolute;
+    top: 550px;
+    right: 24px;
+    transform: rotate(90deg);
+}
+.section-top_sentence__h2 {
+    line-height: 5rem;
+    padding: 60px 0px 60px 0px;
+    font-size: 8vw;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    width: 64%;
+}
+.section-top_sentence__break::before {
+    content: '\A';
+    white-space: pre;
+}
+.section-top_sentence__p {
+    line-height: 2rem;
+    font-size: 4vw;
+    text-align: left;
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+.section-top_sentence-image {
+    text-align: right;
+}
+.section-top_sentence-image-img {
+    display: inline;
+    width: 200px;
+    margin-right: 60px;
+}
+/*ここからパソコンのレスポンシブ（ヘッダー画像とセクショントップ）*/
+@media(min-width: 520px) {
+    .section-top_sentence {
+        min-width: auto;
+        height: 700px;
+        margin: 0 auto;
+    }
+   
+    .section-top {
+        max-width: 960px;
+        position: relative;
+        display: block;
+        margin: 0 auto 0px;
+        text-align: left;
+    }
+    .section-top_sentence-decoration1 {
+        left: 70px;
+        width: 60px;
+        hegiht: 60px;
+    }
+    .section-top_sentence-decoration2 {
+        right: 70px;
+        width: 60px;
+        height: 60px;
+    }
+    .section-top_sentence-decoration3 {
+        left: 70px;
+        width: 60px;
+        height: 60px;
+    }
+    .section-top_sentence-decoration4 {
+        right: 70px;
+        width: 60px;
+        height: 60px;
+    }
+    .section-top_sentence__h2 {
+        padding: 80px 0px 60px 0px;
+        font-size: 3vw;
+        font-weight: 300;
+        margin: 0 0 0 20%;
+    }
+    .section-top_sentence__break {
+        display: none;
+    }
+    .section-top_sentence__p {
+        padding: 0px 0px 60px 0px;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        text-align: left;
+        display: block;
+    }
+    .section-top_sentence-image-img {
+        width: 326px;
+        height: auto;
+    }
+}
+/*ヘッダー画像を端まで伸ばす。*/
+@media(min-width: 976px) {
+    .section-top__img { /*section要素の外*/
+        background: no-repeat url("assets/header-image.png");
+        background-position: center;
+        background-size: 120% 900px;
+        margin-bottom: 40px;
+    }
+}
+/*ここまでパソコンのレスポンシブ*/
+/*トマトラザニアの画像*/
+.section-appeal::before {
+    content: '';
+    background: no-repeat 100% url("assets/tomato-mozzarella-1589412_1920.jpg");
+    display: block;
+    background-size: 100% auto;
+    width: 100%;
+    height: 320px;
+}
+
+/*ここからアピールの記事*/
+.section-appeal {
+    width: 100%;
+}
+.section-appeal__h2 {
+    display: inline-block;
+    font-size: 2rem;
+
+    margin: 70px auto 58px;
+}
+.section-appeal_image {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+.section-appeal_image-vegetablefood {
+    width: 40%;
+}
+.section-appeal_image-vegetablefood-img {
+    max-width: 100%;
+    height: 100%;
+}
+.section-appeal_image-mini {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+.section-appeal_image-vegetable-img {
+    width: 100%
+}
+.section-appeal_image-kyoto-img {
+    width: 100%;
+    margin-top: 20%;
+}
+.section-appeal_sentence__writing {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 1rem;
+    max-height: 600px;
+}
+.section-appeal_sentence__p {
+    display: block;
+    margin: 20px 0;
+}
+.section-appeal_sentence__buttom {
+    display: block;
+    text-align: right;
+    margin: 80px 0;
+}
+.section-appeal_sentence__buttom-a {
+    margin: 80px 5% 80px 0%;
+    padding: 23px;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: #383838;
+    background-image: url("assets/button_01.png");
+    background-repeat: no-repeat;
+    background-position: 0% 75%;
+    background-size: 130%;
+}
+.section-appeal_sentence__obj {
+    margin: 30px 5%
+}
+/*パソコンのレスポンシブ（アピール記事）*/
+@media(min-width: 520px) {
+    .section-appeal {
+        max-width: 974px;
+        margin: 0 auto;
+    }
+    .section-appeal__h2 {
+        display: inline-block;
+        font-size: 3rem;
+        margin: 70px 25px;
+    }
+    .section-appeal_contents {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*右、画像の方*/
+    .section-appeal_image {
+        position: relative;
+        padding-top: 30px;
+        flex-grow: 2;
+        height: 600px;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section-appeal_image-mini {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section-appeal_image-vegetablefood {
+        width: 200px;
+        height: auto;
+    }
+    .section-appeal_image-vegetable-img {
+        height: auto;
+        width: 200px;
+    }
+    .section-appeal_image-vegetable-img {
+        width: 200px;
+    }
+    .section-appeal_image-kyoto {
+        width: 200px;
+    }
+    /*キャラクターの設定*/
+    .section-appeal_image::before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        top: -100px;
+        width: 200px;
+        height: 200px;
+        background: no-repeat url("assets/character_ bringing_reverse.png");
+        background-size: 50% auto;
+    }
+    /*左、文章の方*/
+    .section-appeal_sentence {
+        flex-grow: 5;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 600px;
+        margin-bottom: 160px;
+        margin-left: 30px;
+        position: relative;
+    }
+    .section-appeal_sentence::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        background-color: #707070;
+        width: 2px;
+        height: 320px;
+        
+    }
+
+    .section-appeal_sentence__writing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px 0px 100px 40px;
+        line-height: 2;
+        height: 500px;
+    }
+    .section-appeal__break {
+        display: none;
+    }
+    .section-appeal_sentence__p {
+        flex-grow: 1;
+    }
+    .section-appeal_sentence__buttom {
+        text-align: left;
+    }
+    .section-appeal_sentence__buttom-a {
+        margin: 80px 0 80px 0%;
+        padding: 23px;
+        font-size: 1.5vw;
+    }
+}
+/*パソコンサイズになると画像の方が大きくなって調節する。*/
+@media(min-width: 960px) {
+    /*トマトラザニア*/
+
+
+    .section-appeal__h2 {
+        margin-bottom: 100px;
+    }
+    /*文章の改行を入れる*/
+    .section-appeal__break {
+        display: inline;
+    }
+    .section-appeal_image {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /*キャラクターの設定*/
+    .section-appeal_image::before {
+        content: '';
+        background-size: auto;
+        left: 240px;
+    }
+    .section-appeal_image-mini {
+        height: 300px; /*ここの値でimage-kyotoの位置が決まる*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-left: 25px;
+    }
+    .section-appeal_image-vegetablefood {
+        text-align: right;
+        flex-grow: 2;
+    }
+    .section-appeal_image-vegetablefood-img {
+        height: 400px;
+        min-width: 220px;
+    }
+    .section-appeal_image-vegetable-img {
+        width: 170px;
+        height: auto
+    }
+    .section-appeal_image-kyoto {
+        position: relative;
+    }
+    .section-appeal_image-kyoto-img {
+        position: absolute;
+        width: 300px;
+        height: auto;
+    }
+}
+/*アピール記事ここまで*/
+/*メニュー紹介*/
+.section-menu_lead {
+    background: 5% 0% no-repeat url("assets/leafs.png"), 95% 0% no-repeat url("assets/leafs_right.png");
+    text-align: center;
+    margin-bottom: 70px;
+}
+.section-menu_lead__h2 {
+    margin: 30px;
+    font-size: 5vw;
+}
+.section-menu_lead__p {
+    line-height: 1.5;
+}
+.section-menu_contents {
+    text-align: center;
+}
+.section-menu_contents-1 {
+    background-color: #fff;
+    padding: 15%;
+    margin: 0px 5% 51px 5%;
+}
+.section-menu_contents-2 {
+    background-color: #fff;
+    padding: 15%;
+    margin: 0px 5% 51px 5%;
+}
+.section-menu_contents-3 {
+    background-color: #fff;
+    padding: 15%;
+    margin: 0px 5% 150px 5%;
+}
+.section-menu_contents__img {
+    width: 60vw;
+    margin-bottom: 32px;
+}
+.section-menu_contents__h3 {
+    margin-bottom: 32px;
+    font-size: 6vw;
+}
+.seciton-menu::after {
+    content: '';
+    background: url("assets/character_ bringing.png")
+}
+.section-menu_contents__p {
+    text-align: left;
+    line-height: 1.2;
+}
+.section-menu_contents__span {
+    display: block;
+    text-align: center;
+    padding: 5vw;
+    border: 1px solid #707070;
+    width: 40%;
+    margin: 45px auto 0px;
+}
+.section-menu_contents__span a {
+    text-decoration: none;
+    color: #707070;
+}
+/*予約ボタン*/
+.section-menu_book {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 85px;
+}
+.section-menu_book__span {
+    display: flex;
+    color: #fff;
+    background-color: #2E2E2E;
+    height: 94px;
+    width: 50%;
+    flex-grow: 1;
+}
+.section-menu_book__span a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.section-menu_book__image {
+    position: relative;
+    width: 50%;
+    height: 94px;
+}
+.section-menu_book__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.section-menu_book__image img {
+    width: 100%;
+    height: 94px;
+}
+/*メニュー一覧　パソコン版*/
+@media(min-width: 520px) {
+    .section-menu_lead__h2 {
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+    }
+    .section-menu_contents__h3 {
+        font-size: 1.8rem;
+    }
+}
+@media(min-width: 960px) {
+    .section-menu_lead {
+        background: 5% 0% no-repeat url("assets/leafs_large.png"), 95% 0% no-repeat url("assets/leafs_large_reverce.png");
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .section-menu_lead__p {
+        margin: 60px;
+        font-size: 1.2rem;
+    }
+    .section-menu_contents {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 960px;
+    }
+    .section-menu_contents-1 {
+        width: 260px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0px 20px 70px 20px;
+        order: 2;
+    }
+    .section-menu_contents-2 {
+        width: 260px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0px 20px 70px 20px;
+        order: 1;
+    }
+    .section-menu_contents-3 {
+        width: 260px;
+        background-color: #fff;
+        padding: 30px;
+        margin: 0px 20px 70px 20px;
+        order: 3;
+    }
+    .section-menu_contents__img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 32px;
+    }
+    .section-menu_contents__p {
+        font-size: 1.0rem;
+    }
+    .section-menu_contents__span {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #707070;
+        width: 50%;
+        margin: 45px auto 0px;
+    }
+    /*ここまでがメニュー一覧*/
+    /*予約ボタン　パソコン版*/
+    .section-menu_book {
+        display: flex;
+        justify-content: center;
+        width: 960px;
+        margin: 0 auto;
+        margin-bottom: 85px;
+    }
+    .section-menu_book__image {
+        height: 180px;
+    }
+    .section-menu_book__image::before {
+        height: 180px;
+    }
+    .section-menu_book__image img {
+        height: 180px;
+    }
+    .section-menu_book__span {
+        height: 180px;
+    }
+    .section-menu_book__span a {
+        font-weight: 100;
+        font-size: 2.4rem;
+        padding: 70px;
+    }
+}
+/*メニュー一覧と予約ボタンのパソコン版はここまで
+ここから、スマホ版に戻る*/
+/*アクセスセクション*/
+.section-access {
+    marign-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.section-access__h2 {
+    font-size: 5vw;
+    line-height: 1.5;
+    border-bottom: solid 1px #000000;
+    margin-bottom: 30px;
+}
+.section-access__address {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.section-access_googlemap {
+    margin: 30px auto;
+    height: 180px;
+    width: 70%;
+}
+/*アクセス　パソコン版*/
+@media(min-width: 520px) {
+    .section-access__h2 {
+        font-size: 2.4rem;
+        width: 960px;
+    }
+}
+@media(min-width: 960px) {
+    .section-access__contents {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 960px;
+    }
+    .section-access__h2 {
+        margin: 0 auto;
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+    }
+    .section-access__address {
+        margin: 150px 0px 0px 50px;
+        flex-grow: 2;
+        font-size: 1.6rem;
+        order: 2;
+        text-align: left
+    }
+    .section-access_googlemap {
+        flex-grow: 1;
+        margin: 50px 0;
+        width: 400px;
+        height: 360px;
+    }
+}
+/*ニュースセクション*/
+.section-news {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.section-news__h2 {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 5vw;
+    border-bottom: solid 1px #333;
+}
+.section-news-list {
+    display: block;
+}
+.section-news__list-sentence {
+    display: flex;
+    margin: 20px 15%;
+    border-bottom: solid 1px #000000;
+}
+.section-news__list-sentence a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.2;
+    font-size: 0.7rem;
+}
+.section-news__list-sentence p {
+    margin-left: 20px;
+    line-height: 1.2;
+    font-size: 0.6rem;
+}
+/*ニュースのパソコン版*/
+@media(min-width: 960px) {
+    .section-news {
+        width: 960px
+    }
+    .section-news__h2 {
+        font-size: 2.4rem;
+    }
+    .section-news__list-sentence {
+        margin: 50px 200px;
+    }
+    .section-news__list-sentence a {
+        font-size: 1.0rem;
+    }
+    .section-news__list-sentence p {
+        font-size: 1.1rem;
+    }
+}
+/*ニュースはここまで*/
+/*フッター*/
+.footer {
+    background: no-repeat url("assets/dinner-939434_1920.jpg");
+    background-size: 100% 251px;
+    height: 251px;
+    position: relative;
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+.footer_contents {
+    position: absolute;
+    top: 20px;
+    left: 7%;
+    z-index: 2;
+}
+.footer_contents__ul::before {
+    content: url("assets/logo.png");
+}
+.footer_contents__ul {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.footer_contents__ul-li {
+    color: #fff;
+    line-height: 1.5;
+}
+.footer_sns {
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+    height: 25px;
+    margin-top: 20px;
+}
+/*フッター　パソコン版*/
+@media(min-width: 960px) {
+    .footer_contents {
+        top: 80px;
+    }
+    .footer {
+        background-size: 100% auto;
+        background-position: 0px -160px;
+        height: 350px;
+    }
+    .footer_contents__ul-li {
+        font-size: 1.2rem;
+        line-height: 2;
+        font-weight: 100;
+    }
+    .footer_sns {
+        width: 200px;
+        height: 30px;
+    }
+}
