@@ -182,7 +182,7 @@ width: 100%;
     background-color: #F4F1ED;
 }
 .section-top__img { /*section要素の外*/
-    background: no-repeat url("assets/header-image.png");
+    background: no-repeat url("header-image.png");
     background-position: center;
     background-size: 914px 614px;
     height: 610px;
@@ -318,7 +318,7 @@ width: 100%;
 /*ヘッダー画像を端まで伸ばす。*/
 @media(min-width: 976px) {
     .section-top__img { /*section要素の外*/
-        background: no-repeat url("assets/header-image.png");
+        background: no-repeat url("header-image.png");
         background-position: center;
         background-size: 120% 900px;
         margin-bottom: 40px;
@@ -328,7 +328,7 @@ width: 100%;
 /*トマトラザニアの画像*/
 .section-appeal::before {
     content: '';
-    background: no-repeat 100% url("assets/tomato-mozzarella-1589412_1920.jpg");
+    background: no-repeat 100% url("tomato-mozzarella-1589412_1920.jpg");
     display: block;
     background-size: 100% auto;
     width: 100%;
@@ -393,7 +393,7 @@ width: 100%;
     font-size: 2.5vw;
     text-decoration: none;
     color: #383838;
-    background-image: url("assets/button_01.png");
+    background-image: url("button_01.png");
     background-repeat: no-repeat;
     background-position: 0% 75%;
     background-size: 130%;
@@ -456,7 +456,7 @@ width: 100%;
         top: -100px;
         width: 200px;
         height: 200px;
-        background: no-repeat url("assets/character_ bringing_reverse.png");
+        background: no-repeat url("character_ bringing_reverse.png");
         background-size: 50% auto;
     }
     /*左、文章の方*/
@@ -558,7 +558,7 @@ width: 100%;
 /*アピール記事ここまで*/
 /*メニュー紹介*/
 .section-menu_lead {
-    background: 5% 0% no-repeat url("assets/leafs.png"), 95% 0% no-repeat url("assets/leafs_right.png");
+    background: 5% 0% no-repeat url("leafs.png"), 95% 0% no-repeat url("leafs_right.png");
     text-align: center;
     margin-bottom: 70px;
 }
@@ -597,7 +597,7 @@ width: 100%;
 }
 .seciton-menu::after {
     content: '';
-    background: url("assets/character_ bringing.png")
+    background: url("character_ bringing.png")
 }
 .section-menu_contents__p {
     text-align: left;
@@ -667,7 +667,7 @@ width: 100%;
 }
 @media(min-width: 960px) {
     .section-menu_lead {
-        background: 5% 0% no-repeat url("assets/leafs_large.png"), 95% 0% no-repeat url("assets/leafs_large_reverce.png");
+        background: 5% 0% no-repeat url("leafs_large.png"), 95% 0% no-repeat url("leafs_large_reverce.png");
         text-align: center;
         margin-bottom: 50px;
     }
@@ -854,7 +854,7 @@ width: 100%;
 /*ニュースはここまで*/
 /*フッター*/
 .footer {
-    background: no-repeat url("assets/dinner-939434_1920.jpg");
+    background: no-repeat url("dinner-939434_1920.jpg");
     background-size: 100% 251px;
     height: 251px;
     position: relative;
@@ -876,7 +876,7 @@ width: 100%;
     z-index: 2;
 }
 .footer_contents__ul::before {
-    content: url("assets/logo.png");
+    content: url("logo.png");
 }
 .footer_contents__ul {
     height: 150px;
