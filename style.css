@@ -29,7 +29,7 @@ a:hover {
     z-index: 3;
     height: 50px;
     width: 95%;
-    padding: 5% 5%10px 0%;
+    padding: 5% 5% 10px 0%;
     background-color: #000000;
     display: flex;
     justify-content: space-between
@@ -155,7 +155,7 @@ width: 100%;
     }
     .header-section_books-tel::before {
         content: '';
-        background: no-repeat url("assets/handset.png");
+        background: no-repeat url("handset.png");
         display: block;
         background-size: 40px 40px;
         width: 40px;
