@@ -155,7 +155,7 @@ width: 100%;
     }
     .header-section_books-tel::before {
         content: '';
-        background: no-repeat url("assets/handset.png");
+        background: no-repeat url("handset.png");
         display: block;
         background-size: 40px 40px;
         width: 40px;
@@ -182,7 +182,7 @@ width: 100%;
     background-color: #F4F1ED;
 }
 .section-top__img { /*section要素の外*/
-    background: no-repeat url("assets/header-image.png");
+    background: no-repeat url("header-image.png");
     background-position: center;
     background-size: 914px 614px;
     height: 610px;
@@ -319,7 +319,7 @@ width: 100%;
 /*ヘッダー画像を端まで伸ばす。*/
 @media(min-width: 976px) {
     .section-top__img { /*section要素の外*/
-        background: no-repeat url("assets/header-image.png");
+        background: no-repeat url("header-image.png");
         background-position: center;
         background-size: 120% 900px;
         margin-bottom: 40px;
@@ -329,7 +329,7 @@ width: 100%;
 /*トマトラザニアの画像*/
 .section-appeal::before {
     content: '';
-    background: no-repeat 100% url("assets/tomato-mozzarella-1589412_1920.jpg");
+    background: no-repeat 100% url("tomato-mozzarella-1589412_1920.jpg");
     display: block;
     background-size: 100% auto;
     width: 100%;
@@ -458,7 +458,7 @@ width: 100%;
         top: -100px;
         width: 200px;
         height: 200px;
-        background: no-repeat url("assets/character_ bringing_reverse.png");
+        background: no-repeat url("character_ bringing_reverse.png");
         background-size: 50% auto;
     }
     /*左、文章の方*/
@@ -674,7 +674,7 @@ width: 100%;
         font-size: 3.2rem;
     }
     .section-menu_lead {
-        background: 5% 0% no-repeat url("assets/leafs_large.png"), 95% 0% no-repeat url("assets/leafs_large_reverce.png");
+        background: 5% 0% no-repeat url("leafs_large.png"), 95% 0% no-repeat url("leafs_large_reverce.png");
         text-align: center;
         margin-bottom: 50px;
     }
@@ -869,7 +869,7 @@ width: 100%;
 /*ニュースはここまで*/
 /*フッター*/
 .footer {
-    background: no-repeat url("assets/dinner-939434_1920.jpg");
+    background: no-repeat url("dinner-939434_1920.jpg");
     background-size: 100% 251px;
     height: 251px;
     position: relative;
