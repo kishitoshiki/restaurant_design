@@ -562,7 +562,7 @@ width: 100%;
 /*アピール記事ここまで*/
 /*メニュー紹介*/
 .section-menu_lead {
-    background: 5% 0% no-repeat url("assets/leafs.png"), 95% 0% no-repeat url("assets/leafs_right.png");
+    background: 5% 0% no-repeat url("leafs.png"), 95% 0% no-repeat url("leafs_right.png");
     text-align: center;
     margin-bottom: 70px;
 }
@@ -601,7 +601,7 @@ width: 100%;
 }
 .seciton-menu::after {
     content: '';
-    background: url("assets/character_ bringing.png")
+    background: url(no-repeat "character_ bringing.png")
 }
 .section-menu_contents__p {
     text-align: left;
@@ -891,7 +891,7 @@ width: 100%;
     z-index: 2;
 }
 .footer_contents__ul::before {
-    content: url("assets/logo.png");
+    content: url("logo.png");
 }
 .footer_contents__ul {
     height: 150px;
